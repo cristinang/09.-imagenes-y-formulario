@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Document</title>
+
+	<link rel="icon" href="img/icono.jpg">
+
+	<!--=====================================
+	CSS
+	======================================-->
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- jdSlider -->
+	<link rel="stylesheet" href="css/plugins/jdSlider.css">
+
+	<!-- Pinterest Grid -->
+	<link rel="stylesheet" href="css/plugins/pinterest_grid.css">
+	
+	<!-- Ekko Lightbox -->
+	<link rel="stylesheet" href="css/plugins/ekko_lightbox.css">
+
+	<!-- Estilo personalizado -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--=====================================
+	JS
+	======================================-->	
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	
+	<!-- jdSlider -->
+	<!-- https://www.jqueryscript.net/slider/Carousel-Slideshow-jdSlider.html -->
+	<script src="js/plugins/jdSlider.js"></script>
+
+	<!-- Pinterest Grid -->
+	<!-- https://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Style-Grid-Layout-Pinterest-Grid.html -->
+	<script src="js/plugins/pinterest_grid.js"></script>
+
+	<!-- Ekko Lightbox -->	
+	<!-- https://ashleydw.github.io/lightbox/ -->
+	<script src="js/plugins/ekko_lightbox.js"></script>
+
+	
+
+</head>
+<body id="top">
+
+	<div id="imgFondo"></div>
+
+	<!--=====================================
+	HEADER Y NAV
+	======================================-->	
+
+	<header class="container-fluid bg-light">
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light container">
+
+			<a class="navbar-brand text-center" href="#">
+				
+				<img src="img/logotipo.png" style="width:150px;">
+
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+
+	</header>
+
+	<!--=====================================
+	SLIDESHOW
+	======================================-->	
+
+	<div class="container-fluid p-0">
+		
+		<section class="jd-slider slideshow">
+
+			<div class="slide-inner">
+
+				<ul class="slide-area">
+					<!-- <li> !!!!!!!!!CUANDO QUEREMOS AÑADIR UNA URL A NUESTRA IMAGEN!!!!!!!!!!
+						<div class="carrusel-item">
+							<a href="https://mdbootstrap.com/" target="_blank">
+								<img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="Primera diapositiva">
+							</a>
+						</div>
+					</li> -->
+					<li>
+						<div class="slide-text d-none d-lg-block">
+							<h3>Lorem ipsum.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<img src="img/slide/slide01.jpg">
+					</li>
+					<li>
+						<div class="slide-text d-none d-lg-block">
+							<h3>Lorem ipsum.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<img src="img/slide/slide02.jpg">
+					</li>
+					<li>
+						<div class="slide-text d-none d-lg-block">
+							<h3>Lorem ipsum.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<img src="img/slide/slide03.jpg">
+					</li>
+					<li>
+						<div class="slide-text d-none d-lg-block">
+							<h3>Lorem ipsum.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<img src="img/slide/slide04.jpg">
+					</li>
+				</ul>
+			</div>
+
+			<a class="prev" href="#">
+				<i class="fas fa-angle-left fa-2x text-white pl-3"></i>
+			</a>
+			<a class="next" href="#">
+				<i class="fas fa-angle-right fa-2x text-white pr-3"></i>
+			</a>
+
+			<div class="controller">
+
+				<a href="#" class="auto d-none">
+					
+					<i class="fas fa-play fa-xs"></i>
+					<i class="fas fa-pause fa-xs"></i>
+
+				</a>
+
+				<div class="indicate-area d-none d-lg-block"></div>
+			</div>
+
+		</section>
+
+	</div>
+
+	<!--=====================================
+	GALERÍA
+	======================================-->	
+
+	<div class="container-fluid p-0">
+
+		<h2 class="text-uppercase py-3 text-muted text-center">Galería de imágenes</h2>
+		
+		<section class="pinterest_grid">
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/01.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/01.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/02.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/02.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/03.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/03.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/04.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/04.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/05.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/05.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/06.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/06.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/01.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/01.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/02.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/02.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/03.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/03.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/04.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/04.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/05.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/05.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel"> 
+
+				<a href="img/galeria/06.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/06.jpg">
+				</a>
+
+			</article>
+
+
+		</section>
+
+	</div>
+
+	<!-- FORMULARIO -->
+	<div class="container-fluid p-0 bg-white" id="formulario">
+
+		<h2 class="text-uppercase pt-5 text-muted text-center"> Validacion del formulario</h2>
+
+		<div class="container">
+
+			<form action="" class="bg-light p-4 needs-validation" >
+
+				<h4 class="bg-dark text-white text-center p-2"> Ingrese los datos</h4>
+
+				<div class="form-group">
+				  <label for="usuario">Ingrese su usuario</label>
+				  <input type="text" id="usuario" class="form-control" placeholder="Escriba su usuario con minimo 2 caracteres,maximo con 6 caracteres" minlength="2" maxlength="6" pattern="(?=.*[A-Za-z]).{2,6}" required>
+				 	 <div class="valid-feedback">Valid.</div>
+				  	<div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+
+				<div class="form-group">
+					<label for="password">Ingrese su contraseña</label>
+					<input type="password" id="password" class="form-control" placeholder="Escriba su contraseña con minimo 8 caracteres y debe incluir letras en mayusculas, minusculas y numeros" required>
+						<div class="valid-feedback">Valid.</div>
+						<div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Ingrese su email</label>
+					<input type="text" id="email" class="form-control" placeholder="Escriba su email" name="email" minlength="8" required>
+						<div class="valid-feedback">Valid.</div>
+						<div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+
+				<div class="form-group">
+					<label	for="color=">Eliga su color:</label>
+					<select id="color" class="form-control" name="color" required>
+						<option value="">Seleccione un color</option>
+						<option value="rojo">Rojo</option>
+						<option value="verde">Verde</option>
+						<option value="azul">Azul</option>
+						<option value="amarillo">Amarillo</option>
+						<option value="naranja">Naranja</option>
+					</select>
+						<div class="valid-feedback">Valid.</div>
+				  		<div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+
+				<div class="form-group">
+					<label>Seleccione animal</label>
+
+
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input" name="Perro"> Perro
+						</label>
+					</div>
+				
+
+					
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input" name="Conejo"> Conejo
+						</label>
+					</div>
+				
+
+				
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input" name="Gato"> Gato
+						</label>
+					</div>
+					
+				</div>
+
+				<div class="form-group">
+
+					<label>Seleccione forma de pago:</label>
+
+					<div class="form-check">
+						<label class="form-check-label">
+						<input type="radio" class="form-check-input icheck" name="pago" checked required> Efectivo
+							
+						</label>
+					</div>
+
+					<div class="form-check">
+						<label class="form-check-label">
+						<input type="radio" class="form-check-input icheck" name="pago" required> Crédito
+							
+						</label>
+					</div>
+
+				</div>
+
+				<div class="form-group">
+					<label for="mensajes">Mensaje:</label>
+					<textarea class="form-control" rows="5" id="mensajes" required></textarea>
+					<div class="valid-feedback">Valid.</div>
+				  	<div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+
+				<div class="form-group form-check">
+				  <label class="form-check-label">
+					  <input class="form-check-input terminos" type="checkbox" required>
+						  <span class="check"></span>Acepto términos y condiciones.
+					  <div class="valid-feedback">Valid.</div>
+					  <div class="invalid-feedback">Please fill out this field.</div>
+				  </label>
+			  </div>
+
+			  <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+
+				
+
+			</form>
+		</div>
+	</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
